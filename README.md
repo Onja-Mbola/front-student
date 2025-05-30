@@ -29,3 +29,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## ✔️ 4. Lancer le conteneur
 ```docker run -d -p 5173:80 --name student-frontend student-frontend```
+
