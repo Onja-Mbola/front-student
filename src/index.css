@@ -1,0 +1,38 @@
+/* index.css - version compatible avec MUI theming */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: unset; /* MUI contrôle */
+  color: unset;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
