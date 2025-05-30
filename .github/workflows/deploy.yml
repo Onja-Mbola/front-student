@@ -2,11 +2,10 @@ name: Build and Deploy React Client
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,6 +25,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/client-app:latest
+          tags: scolariteecole/client-app:latest
